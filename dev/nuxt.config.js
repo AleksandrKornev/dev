@@ -34,6 +34,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  css: [
+    '@/assets/scss/index.scss'
+  ]
 }
 
