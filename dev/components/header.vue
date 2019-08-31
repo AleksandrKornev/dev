@@ -5,12 +5,14 @@
       :class="{ active: item.route == $route.path }"
       v-for="(item, index) in items" 
       :key="index"
-      @click="$router.push(item.route)"
+      @click="route(item)"
     >{{ item.name }}</div>
   </div>
 </template>
 
 <script>
+import eventBus from '@/utils/eventBus.js';
+
 export default {
   name: 'Header-e',
   data() {
@@ -29,6 +31,11 @@ export default {
           route: '/contacts'
         },
       ]
+    }
+  },
+  methods: {
+    route(item) {
+      eventBus.$emit('route', item);
     }
   },
 }
