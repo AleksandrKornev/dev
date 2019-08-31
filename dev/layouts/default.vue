@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <Header/>
+    <Header v-if="isDefault"/>
     <Content>
       <transition name="routerAnim">
         <nuxt />
@@ -16,6 +16,12 @@ import Content from '@/components/content.vue';
 import Footer from '@/components/footer.vue';
 
 export default {
+  props: {
+    isDefault: {
+      type: Boolean,
+      default: true
+    }
+  },
   components: {
     Header,
     Content,

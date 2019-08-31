@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+  <line fill="none" id="svg_1" stroke="#000000" stroke-width="5" x1="0.5" x2="257.5" y1="1.5" y2="266.5"/>
+  <!-- <rect width="130" height="350" x="250" y="-90"
+  fill="black" stroke="black"
+  stroke-width="10"/> -->
+  <line fill="none" id="svg_3" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="256.499996" x2="377.499999" y1="265.5" y2="265.5"/>
+  <line fill="none" id="svg_4" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" x1="375.499986" x2="640.5" y1="266.500016" y2="1.5"/>
+ </g>
+</svg>
