@@ -11,10 +11,8 @@
 </template>
 
 <script>
-import eventBus from '@/utils/eventBus.js';
-
 export default {
-  name: 'Header-e',
+  name: 'Header',
   data() {
     return {
       items: [
@@ -35,7 +33,7 @@ export default {
   },
   methods: {
     route(item) {
-      eventBus.$emit('route', item);
+      this.$router.push(item.route);
     }
   },
 }

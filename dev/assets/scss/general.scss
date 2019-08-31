@@ -3,3 +3,18 @@
   width: 100vw;
   background: $bg;
 }
+
+.routerAnim {
+  &-enter, &-leave-to {
+    opacity: 0;
+    color: rgb(180, 180, 180);
+  }
+
+  &-enter-active {
+    transition: 2s;
+  }
+
+  &-leave-active {
+    transition: 2s;
+  }
+}
