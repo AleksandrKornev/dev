@@ -1,27 +1,41 @@
 <template>
-  <nuxt/>
+  <section class="container">
+    <Header/>
+    <Content>
+      <transition name="routerAnim">
+        <nuxt/>
+      </transition>
+    </Content>
+    <Footer/>
+  </section>
 </template>
+
+<script>
+import Header from '@/components/header.vue';
+import Content from '@/components/content.vue';
+import Footer from '@/components/footer.vue';
+
+export default {
+  components: {
+    Header,
+    Content,
+    Footer
+  }
+}
+</script>
 
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 html, body {
-  width: 100vw;
-  height: 100vh;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
   margin: 0;
+  color: #fff;
 }
 
 </style>

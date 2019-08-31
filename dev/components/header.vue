@@ -2,8 +2,10 @@
   <div class="header__wrapper">
     <div 
       class="header__item"
+      :class="{ active: item.route == $route.path }"
       v-for="(item, index) in items" 
       :key="index"
+      @click="$router.push(item.route)"
     >{{ item.name }}</div>
   </div>
 </template>
@@ -15,13 +17,16 @@ export default {
     return {
       items: [
         {
-          name: "Главная"
+          name: "Главная",
+          route: '/'
         },
         {
-          name: "Вкладка"
+          name: "Вкладка",
+          route: '/tab'
         },
         {
-          name: "Контакты"
+          name: "Контакты",
+          route: '/contacts'
         },
       ]
     }

@@ -26,5 +26,9 @@
     &:hover {
       transform:perspective(50px) translateZ(3px);
     }
+
+    &.active {
+      background: rgba(113, 113, 113, 0.6);
+    }
   }
 }

@@ -1,18 +1,11 @@
 <template>
-  <section class="container">
-    <Header/>
-    <div>
-    </div>
-  </section>
+  <div class="main__wrapper">
+    Главная
+  </div>
 </template>
 
 <script>
-import Header from '@/components/header.vue'
-
 export default {
-  components: {
-    Header
-  }
 }
 </script>
 

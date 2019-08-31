@@ -1,0 +1,50 @@
+.footer {
+  &__wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  &__side {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    transition: .6s;
+
+    &.left {
+      left: 0;
+      background: linear-gradient(56deg, rgba(49, 49, 49, 0.6) 0, rgba(49, 49, 49, 0.6) 70%, transparent 70%, transparent 100% );
+
+      & > * {
+        justify-content: center;
+      }
+    }
+
+    &.right {
+      right: 0;
+      background: linear-gradient(-56deg, rgba(49, 49, 49, 0.6) 0, rgba(49, 49, 49, 0.6) 70%, transparent 70%, transparent 100% );
+      
+      & > * {
+        justify-content: center;
+      }
+    }
+
+    &__content {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.active {
+      width: 300px;
+      height: 350px;
+
+      & .footer__side__content{
+        display: flex;
+      }
+    }
+  }
+}
