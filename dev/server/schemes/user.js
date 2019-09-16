@@ -14,8 +14,7 @@ const userScheme = {
   },
   password: {
     type: String,
-    required: true,
-    unique: true
+    required: true
   },
 };
 
