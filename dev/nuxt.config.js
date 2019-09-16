@@ -37,6 +37,10 @@ module.exports = {
   },
   css: [
     '@/assets/scss/index.scss'
+  ],
+  serverMiddleware: [
+    // API middleware
+    '~/server/index.js'
   ]
 }
 

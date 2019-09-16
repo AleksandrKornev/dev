@@ -8,7 +8,7 @@
     >
       <div class="new__item__text">{{ item.name }}</div>
       <div class="new__item__bg">
-        <component :is="item.component" :isDefault="item.route == '/contacts' ? false : true " ></component>
+        <component :is="item.component" :isDefault="item.isDefault" ></component>
       </div>
     </div>
   </div>
@@ -34,22 +34,26 @@ export default {
         {
           name: "Главная",
           route: '/',
-          component: 'Default'
+          component: 'Default',
+          isDefault: false
         },
         {
           name: "Вкладка",
           route: '/tab',
-          component: 'Default'
+          component: 'Default',
+          isDefault: false
         },
         {
           name: "Контакты",
           route: '/contacts',
-          component: 'Default'
+          component: 'Default',
+          isDefault: false
         },
         {
           name: "Вторая",
           route: '/second',
-          component: 'Default'
+          component: 'Default',
+          isDefault: true
         },
       ]
     }
